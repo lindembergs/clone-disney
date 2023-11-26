@@ -21,8 +21,9 @@ nav {
   align-content: center;
   width: 1238px;
   height: 48px;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 32px;
+  position: relative;
 }
 
 nav .logo {
@@ -47,4 +48,13 @@ ul li img {
   margin-right: 0.5rem;
   width: 19px;
   height: 19px;
+}
+
+.perfil figure img {
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px 5px 0px 0px;
 }
