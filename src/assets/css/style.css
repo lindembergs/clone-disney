@@ -14,9 +14,9 @@ body {
   background-size: cover;
 }
 
-nav .nav-header {
+nav {
   width: 1238px;
   height: 48px;
-  top: 55px;
-  left: 32px;
+  margin-top: 40px;
+  margin-left: 32px;
 }
