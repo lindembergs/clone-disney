@@ -17,6 +17,8 @@ body {
 nav {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  align-content: center;
   width: 1238px;
   height: 48px;
   margin-top: 20px;
