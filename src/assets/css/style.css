@@ -58,3 +58,7 @@ ul li img {
   right: 0;
   margin: 10px 5px 0px 0px;
 }
+
+.principal figure img {
+  margin-left: 5rem;
+}
