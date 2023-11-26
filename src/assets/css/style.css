@@ -13,6 +13,7 @@ body {
     url("../img/Imagem\ Backgrand.svg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   font-family: poppins, "sans-serif";
   color: #f9f9f9;
 }
@@ -174,5 +175,14 @@ ul li img {
   background-color: #ddd;
   height: 3px;
   border-radius: 5px;
+  margin-top: 20px;
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  width: 1750px;
+  height: 154.69px;
+  border-radius: 3px;
   margin-top: 20px;
 }
