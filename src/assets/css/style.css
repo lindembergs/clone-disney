@@ -151,3 +151,28 @@ ul li img {
   text-align: left;
   margin-top: 25px;
 }
+.toggle {
+  margin-top: -10px;
+}
+.toggle ul {
+  display: flex;
+  flex-direction: row;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  gap: 30px;
+}
+
+.toggle ul li {
+  list-style: none;
+}
+
+.progress-bar-toggle {
+  width: 140px;
+  background-color: #ddd;
+  height: 3px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
