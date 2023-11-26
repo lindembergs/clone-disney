@@ -15,8 +15,24 @@ body {
 }
 
 nav {
+  display: flex;
+  flex-direction: row;
   width: 1238px;
   height: 48px;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-left: 32px;
+}
+
+ul {
+  display: flex;
+  color: #f9f9f9;
+  font-weight: 900;
+  font-size: 14.33px;
+  line-height: 21.49px;
+  align-items: center;
+  align-content: center;
+}
+
+li {
+  list-style: none;
 }
