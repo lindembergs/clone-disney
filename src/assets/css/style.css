@@ -190,6 +190,9 @@ ul li img {
   border-radius: 3px;
   margin-top: 20px;
 }
+.test {
+  height: 190px;
+}
 footer {
   background-color: #0e0b14;
   height: 317px;
