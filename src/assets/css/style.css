@@ -12,7 +12,7 @@ a {
 
 html,
 body {
-  min-height: 100vh;
+  min-height: 100%;
   background-image: url("../img/gradiente\ backgrand.svg"),
     url("../img/Imagem\ Backgrand.svg");
   background-size: 100%;
@@ -206,6 +206,8 @@ ul li img {
 footer {
   background-color: #0e0b14;
   height: 317px;
+  width: 100%;
+  margin-bottom: 0 auto !important;
 }
 footer .logo {
   display: flex;
