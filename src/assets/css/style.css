@@ -10,7 +10,10 @@ a {
   text-decoration: none;
 }
 
-html,
+html {
+  min-height: 100%;
+  min-width: 100%;
+}
 body {
   min-height: 100%;
   min-width: 100%;
@@ -18,20 +21,11 @@ body {
   color: #f9f9f9;
   background-image: url("../img/gradiente backgrand.svg"),
     url("../img/Imagem Backgrand.svg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: top;
+  background-position: center, center;
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed, fixed;
 }
-
-/* section .teste {
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  width: 1800px;
-  object-fit: cover;
-  z-index: -1;
-} */
 
 header {
   display: flex;
@@ -49,17 +43,13 @@ nav {
   flex-direction: row;
   align-items: center;
   align-content: center;
-  width: 1238px;
+  max-width: 1280px;
   height: 48px;
   margin-top: 10px;
   margin-left: 32px;
 }
 
-nav .logo {
-  margin-right: 2.5rem;
-}
-
-.nav-header ul {
+.nav-list {
   display: flex;
   gap: 3rem;
   color: #f9f9f9;
@@ -68,7 +58,7 @@ nav .logo {
   line-height: 21.49px;
 }
 
-.nav-header ul li {
+.nav-list li {
   list-style: none;
   display: flex;
 }
@@ -78,6 +68,7 @@ ul li img {
   width: 19px;
   height: 19px;
 }
+
 header .perfil img {
   margin-right: 0.5rem;
 }
@@ -199,7 +190,6 @@ header .perfil img {
 .carousel {
   display: flex;
   gap: 20px;
-  width: 1750px;
   height: 154.69px;
   border-radius: 3px;
   margin-top: 20px;
@@ -207,6 +197,7 @@ header .perfil img {
 }
 .above-carousel {
   height: 160px;
+  width: 100%;
   background-color: #191a25;
 }
 footer {
@@ -290,4 +281,87 @@ footer .logo img {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+/* @media (max-width: 934px) {
+  header .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  .nav-header ul li {
+    font-size: 14px;
+  }
+  header .perfil img {
+    width: 40px;
+    height: 40px;
+  }
+} */
+
+@media (max-width: 750px) {
+  .hamburger {
+    display: block;
+    z-index: 1;
+  }
+
+  .nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #a5c;
+    clip-path: circle(100px at 90% -15%);
+    transition: 1s ease-out;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+
+    pointer-events: none;
+  }
+
+  .nav-list a {
+    font-size: 24px;
+    opacity: 0;
+  }
+
+  .nav-list li:nth-child(1) a {
+    transition: 0.5s 0.2s;
+  }
+
+  .nav-list li:nth-child(2) a {
+    transition: 0.5s 0.4s;
+  }
+
+  .nav-list li:nth-child(3) a {
+    transition: 0.5s 0.6s;
+  }
+
+  /* Estilos ativos */
+
+  .nav.active .nav-list {
+    clip-path: circle(1500px at 90% -15%);
+    pointer-events: all;
+  }
+
+  .nav.active .nav-list a {
+    opacity: 1;
+  }
+
+  .nav.active .hamburger {
+    position: fixed;
+    top: 26px;
+    right: 16px;
+    border-top-color: transparent;
+  }
+
+  .nav.active .hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  .nav.active .hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
 }
