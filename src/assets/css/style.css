@@ -13,13 +13,15 @@ a {
 html,
 body {
   min-height: 100%;
-  background-image: url("../img/gradiente\ backgrand.svg"),
-    url("../img/Imagem\ Backgrand.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  min-width: 100%;
   font-family: poppins, "sans-serif";
   color: #f9f9f9;
+  background-image: url("../img/gradiente backgrand.svg"),
+    url("../img/Imagem Backgrand.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
 }
 
 /* section .teste {
@@ -31,6 +33,17 @@ body {
   z-index: -1;
 } */
 
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  margin: 0.5rem 0rem 0 2rem;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -40,7 +53,6 @@ nav {
   height: 48px;
   margin-top: 10px;
   margin-left: 32px;
-  position: relative;
 }
 
 nav .logo {
@@ -66,14 +78,8 @@ ul li img {
   width: 19px;
   height: 19px;
 }
-
-.perfil figure img {
-  display: flex;
-  justify-content: end;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 10px 5px 0px 0px;
+header .perfil img {
+  margin-right: 0.5rem;
 }
 
 .principal figure img {
